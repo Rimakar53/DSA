@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string,h>
+int main()
+{
+    gets(str);
+    int i;
+    while(str[i]!='\0')
+    {
+        if(str[i]==ALPHABET)
+            stcak[++top]=str[i];
+        else{
+            if(str[i]=='-'){
+                stack[top-1]=stack[top-1]-stack[top];
+                top--;
+            }
+            if(str[i]=='+'){
+                  stack[top-1]=stack[top-1]-stack[top];
+                    top--;
+            }
+            if(str[i]=='*'){
+                  stack[top-1]=stack[top-1]-stack[top];
+                    top--;
+            }
+            if(str[i]=='/'){
+                  stack[top-1]=stack[top-1]-stack[top];
+                    top--;
+            }
+            i++;
+        }
+        printf("%d",stack[top]);
+    }
+}
